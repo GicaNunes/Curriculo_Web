@@ -1,0 +1,57 @@
+Criando um Chatbot no Copilot Studio com PDF
+
+  Acesso ao Copilot Studio:
+
+Acesse o Copilot Studio e faça login com sua conta Microsoft. Se você não tiver uma conta, crie uma.
+
+  Cadastro e Primeiros Passos:
+
+Após o login, clique em "Criar Novo Copilot".
+
+Insira um nome para o seu chatbot, escolha o idioma e forneça a URL do site que servirá como referência para o chatbot.
+
+  Adicionando o Arquivo PDF:
+
+Na seção de conhecimento, clique em "Add Conhecimento".
+
+  Selecione "Upload de Arquivo" e faça o upload do seu arquivo PDF. Isso permitirá que o chatbot leia e extraia informações do documento.
+
+Treinamento do Chatbot:
+
+  Após adicionar o PDF, inicie o processo de treinamento. O chatbot analisará o conteúdo do PDF para responder adequadamente às perguntas.
+
+Testando o Chatbot:
+
+  Teste o chatbot para garantir que ele está interpretando corretamente os dados do PDF. Faça perguntas relacionadas ao conteúdo do PDF e ajuste conforme necessário.
+
+Integrando o Chatbot ao Seu Site
+Escolha da Plataforma de Integração:
+
+O Copilot Studio oferece várias opções de integração, incluindo a integração direta em sites.
+
+Gerando o Código de Incorporação:
+
+No Copilot Studio, vá para a seção de canais escolha site personalizado .
+
+Copie o código gerado.
+
+Implementação no Site:
+
+Acesse o código HTML do seu site onde deseja que o chatbot apareça.
+
+Cole o código de incorporação no local desejado.
+
+Testes e Ajustes Finais:
+
+Teste o chatbot diretamente no seu site para garantir que ele está funcionando corretamente.
+
+Faça ajustes na aparência e nas funcionalidades conforme necessário para melhorar a experiência do usuário.
+
+Monitoramento e Atualização Contínua:
+
+Monitore o desempenho do chatbot e colete feedback dos usuários.
+
+Faça atualizações regulares para melhorar a eficácia e relevância do chatbot.
+
+
+
