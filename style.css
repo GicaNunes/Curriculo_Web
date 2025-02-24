@@ -84,6 +84,15 @@ aside {
     flex: 1;
 }
 
+/* CSS para ajustar o tamanho do chatbot */
+#chatbot-container {
+    width: 100%; /* Define a largura como 100% do elemento pai */
+    height: 600px; /* Ajuste a altura conforme necessário */
+    max-width: 500px; /* Defina um valor máximo para a largura */
+    margin: 0 auto; /* Centraliza o contêiner */
+  }
+  
+
 section {
     margin-bottom: 20px;
     padding: 20px; /* Adicionado padding para espaçamento consistente */
