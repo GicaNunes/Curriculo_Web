@@ -10,7 +10,8 @@ const DEBUG = true;
 function criarMensagem(texto, tipo = "bot") {
   const msg = document.createElement("div");
   msg.className = `msg ${tipo}`;
-  msg.textContent = texto;
+  // Usar innerHTML para renderizar links e formatação
+  msg.innerHTML = texto;
   return msg;
 }
 
@@ -94,7 +95,6 @@ async function enviar() {
 
     if (DEBUG) console.log("DEBUG: response status:", response.status);
 
-    // lê o corpo apenas uma vez
     const raw = await response.text();
     let dados;
     try {
@@ -105,7 +105,6 @@ async function enviar() {
       dados = { mensagem: raw };
     }
 
-    // Normaliza a mensagem final
     let mensagemFinal = null;
     if (dados == null) {
       mensagemFinal = "Resposta vazia do servidor.";
@@ -151,11 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (DEBUG) console.log("DEBUG: listeners registrados", { btnExists: !!btn, inputExists: !!input });
 
-  // Mensagem inicial opcional
   const mensagens = document.getElementById("mensagens");
   if (mensagens && mensagens.children.length === 0) {
     appendMensagem("Bem-vindo(a)! Eu sou a Gigi, assistente virtual da Giselle. Aqui você vai conhecer suas competências, projetos e certificações que fazem dela uma profissional preparada para desafios em tecnologia 🚀", "bot");
   }
 });
-
-
