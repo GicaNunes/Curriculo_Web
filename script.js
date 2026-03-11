@@ -1,8 +1,7 @@
 // -----------------------------
 // Configurações
 // -----------------------------
-const WEBHOOK_URL = "https://n8n-chatbot-7szi.onrender.com/webhook/pergunta-visitante
-";
+const WEBHOOK_URL = "https://n8n-chatbot-7szi.onrender.com/webhook/pergunta-visitante";
 const DEBUG = true;
 
 // -----------------------------
@@ -158,4 +157,5 @@ document.addEventListener('DOMContentLoaded', () => {
     appendMensagem("Bem-vindo(a)! Eu sou a Gigi, assistente virtual da Giselle. Aqui você vai conhecer suas competências, projetos e certificações que fazem dela uma profissional preparada para desafios em tecnologia 🚀", "bot");
   }
 });
+
 
