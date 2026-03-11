@@ -1,158 +1,379 @@
+/* Fonte principal */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #b9adad; /* Tom de cinza claro */
-    margin: 0;
-    padding: 0;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: justify; /* textos justificados */
 }
 
+/* Tema claro */
+body.light {
+  background-color: #f4f4f9;
+  color: #333;
+}
+body.light article, body.light aside {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Tema escuro */
+body.dark {
+  background-color: #0d1117; /* fundo escuro estilo GitHub */
+  color: #c9d1d9;
+}
+
+body.dark .header {
+  background: linear-gradient(90deg, #111, #222);
+}
+
+body.dark nav {
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+body.dark nav ul {
+  background-color: transparent;
+}
+
+body.dark nav ul li a {
+  color: #c9d1d9;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+body.dark nav ul li a:hover {
+  color: #58a6ff;
+  text-shadow: 0 0 6px #58a6ff;
+}
+
+body.dark article, body.dark aside {
+  background-color: #1e1e2f;
+  border: 1px solid #30363d;
+}
+
+body.dark footer {
+  background-color: #161b22;
+  color: #8b949e;
+}
+
+/* Cabeçalho */
 .header {
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 20px;
-    background-color: #003366;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #003366, #0055a5);
+  color: #fff;
 }
-
 .header img {
-    border-radius: 50%;
-    margin-right: 20px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid #fff;
 }
-
 .header h1 {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    font-size: 24px;
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
 }
-
 .header h2 {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    font-size: 18px;
-    color: #ccc;
-    text-align: center; /* Centralizar o nome */
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #d1d1d1;
 }
 
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cc5200;
+  padding: 10px;
+}
 nav ul {
-    list-style: none;
-    padding: 0;
-    background-color: #cc5200; /* Tom mais escuro de laranja */
-    text-align: center;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
-
 nav ul li {
-    display: inline;
-    margin: 0 10px;
-    padding: 10px; /* Adicionado padding para melhor espaçamento */
+  margin: 0 10px;
 }
-
 nav ul li a {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out; /* Transição suave */
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
-
 nav ul li a:hover {
-    text-decoration: underline;
-    color: #ffcc99; /* Cor ligeiramente mais clara ao passar o mouse */
+  background: #ff944d;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-    text-align: justify; /* Justificar todos os parágrafos */
+/* Botão Dark Mode */
+#toggle-theme {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body.light #toggle-theme {
+  background: #cc5200;
+  color: #fff;
+}
+body.light #toggle-theme:hover {
+  background: #ff944d;
+  color: #fff;
+}
+body.dark #toggle-theme {
+  background: #111;
+  color: #58a6ff;
+  box-shadow: 0 0 8px #58a6ff;
+}
+body.dark #toggle-theme:hover {
+  background: #222;
+  color: #0ff;
+  box-shadow: 0 0 12px #0ff, 0 0 24px #0ff; /* efeito neon */
 }
 
+/* Layout principal */
 main {
-    display: flex;
-    margin: 20px;
+  display: flex;
+  margin: 20px;
+  gap: 20px;
 }
-
 article, aside {
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: white;
-    margin-right: 20px;
-    border-radius: 10px; /* Borda arredondada */
+  padding: 20px;
+  border-radius: 10px;
+}
+article { flex: 3; }
+aside { flex: 1; }
+
+/* Seções */
+section h3 {
+  font-size: 20px;
+  color: #003366;
+  border-left: 4px solid #003366;
+  padding-left: 8px;
+  margin-bottom: 10px;
 }
 
-article {
-    flex: 3;
+/* Chat */
+#chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0d6efd;
+  color: #fff;
+  font-size: 22px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+#chat-toggle:hover { background: #084298; }
+
+#chatbox {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 340px;
+  height: 480px;
+  border-radius: 12px;
+  background: #1e1e2f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+  font-family: 'Inter', sans-serif;
+  color: #e0e0e0;
+  border: 1px solid #2a2a40;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+#chatbox.fechado { transform: scale(0); opacity: 0; pointer-events: none; }
+#chatbox.aberto { transform: scale(1); opacity: 1; pointer-events: auto; }
+
+#mensagens {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
-aside {
-    flex: 1;
+.msg {
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 75%;
+  font-size: 14px;
+  display: inline-block;
 }
 
-/* CSS para ajustar o tamanho do chatbot */
-#chatbot-container {
-    width: 100%; /* Define a largura como 100% do elemento pai */
-    height: 600px; /* Ajuste a altura conforme necessário */
-    max-width: 500px; /* Defina um valor máximo para a largura */
-    margin: 0 auto; /* Centraliza o contêiner */
-  }
-  
-
-section {
-    margin-bottom: 20px;
-    padding: 20px; /* Adicionado padding para espaçamento consistente */
+.usuario {
+  background: #0d6efd;
+  color: #fff;
+  align-self: flex-end;
+  margin-left: auto; /* força para direita */
 }
 
-#formacao-e-competencias {
-    background-color: #003366; /* Azul */
-    color: white;
-    padding: 10px;
-    border-radius: 10px; /* Borda arredondada */
+.bot {
+  background: #20c997;
+  color: #fff;
+  align-self: flex-start;
+  margin-right: auto; /* força para esquerda */
 }
 
-footer section h3 {
-    font-family: 'Poppins', sans-serif;
+#entrada {
+  display: flex;
+  border-top: 1px solid #2a2a40;
+  background: #2a2a40;
 }
-
-footer p, footer a {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+#entrada input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #1e1e2f;
+  color: #e0e0e0;
 }
-
-.footer-highlight {
-    font-family: 'Pacifico', cursive;
-    font-size: 20px;
-    text-align: center;
-    color: #ff6600;
+#entrada input::placeholder { color: #888; }
+#entrada button {
+  padding: 10px 15px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
+#entrada button:hover { background: #084298; }
 
+/* Footer */
 footer {
-    background-color: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 2px solid #ccc; /* Adicionado borda para separar o footer do conteúdo principal */
+  text-align: center;
+  padding: 15px 0;
+  border-top: 2px solid #ccc;
+  background-color: #003366;
+  color: #fff;
+}
+.footer-highlight {
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  color: #ff6600;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  main { flex-direction: column; margin: 10px; }
+  article, aside { width: 100%; margin-bottom: 20px; }
 }
 
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        border-bottom: none;
-        padding-bottom: 0;
-    }
+  .header { flex-direction: column; text-align: center; }
+  nav { flex-direction: column; align-items: center; }
+  nav ul { flex-direction: column; width: 100%; }
+  nav ul li { margin: 8px 0; }
+}
 
-    .header img {
-        margin-bottom: 10px;
-    }
+@media (max-width: 480px) {
+  .header h1 { font-size: 20px; }
+  .header h2 { font-size: 14px; }
+  nav ul li a { padding: 10px; font-size: 14px; }
+  #chatbox { width: 95%; right: 2.5%; height: 400px; }
+}
+/* Estilo geral da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+/* Cabeçalho */
+table thead {
+  background: #003366;
+  color: #fff;
+}
+table thead th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 700;
+}
 
-    main {
-        flex-direction: column;
-        margin: 0;
-    }
+/* Linhas */
+table tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+table td {
+  padding: 12px;
+  vertical-align: top;
+}
 
-    article, aside {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+/* Links */
+table a {
+  color: #0d6efd;
+  font-weight: 600;
+  text-decoration: none;
+}
+table a:hover {
+  text-decoration: underline;
+}
+
+/* Tema escuro */
+body.dark table {
+  border: 1px solid #30363d;
+}
+body.dark table thead {
+  background: #161b22;
+  color: #58a6ff;
+}
+body.dark table tbody tr:nth-child(even) {
+  background-color: #1e1e2f;
+}
+body.dark table td {
+  color: #c9d1d9;
+}
+body.dark table a {
+  color: #58a6ff;
+}
+body.dark table a:hover {
+  color: #0ff;
+  text-shadow: 0 0 6px #0ff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+  table thead {
+    display: none; /* esconde cabeçalho em telas pequenas */
+  }
+  table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    text-align: left;
+  }
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
+    color: #003366;
+  }
+  body.dark table td::before {
+    color: #58a6ff;
+  }
 }

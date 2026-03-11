@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo de Giselle Nunes Santana</title>
+    <!-- Bootstrap e Font Awesome -->
+     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-    
 </head>
-<body>
+<body class="light">
     <header class="header">
         <img src="eu recente.jpg" alt="Foto de Giselle Nunes Santana, Desenvolvedora Fullstack e Analista de Dados" width="100">
         <div>
             <h1>Giselle Nunes Santana</h1>
-            <h2>Desenvolvedora | Analista de Dados</h2>
+            <h2>Desenvolvedora Fullstack | Analista de Dados | Python · SQL · AWS · Node.js</h2>
         </div>
     </header>
     <nav>
@@ -29,39 +29,111 @@
             <li><a href="#competencias">COMPETÊNCIAS</a></li>
             <li><a href="#experiencia">EXPERIÊNCIA</a></li>
             <li><a href="#formacao">FORMAÇÃO</a></li>
+            <li><a href="#certificacoes">CERTIFICAÇÕES</a></li>
         </ul>
+        <!-- Botão Dark Mode -->
+        <button id="toggle-theme">🌙 Dark Mode</button>
     </nav>
     <main>
         <article>
             <section id="sobre-mim">
                 <h3>SOBRE MIM</h3>
-                <p>Desenvolvedora de Software e Analista de Dados, com experiência sólida em scripts python para plataformas SIG e rotinas lisp. Apaixonada por código e criatividade, possuo habilidades em Java, SQL, AWS e BI, além de forte capacidade analítica e criativa. Busco oportunidades desafiadoras para aplicar meus conhecimentos em IA, desenvolvimento fullstack e análise de dados. Participo ativamente de comunidades de desenvolvedores e eventos da área, o que me mantém atualizada com as melhores práticas e tendências do setor.</p>
+                <p>Sou Desenvolvedora Fullstack e Analista de Dados com experiência em Python, SQL, Node.js e React. Atuo na criação de aplicações web escaláveis, automações inteligentes e soluções baseadas em dados que apoiam a tomada de decisão. Tenho conhecimento em cloud computing (AWS e Azure), bancos de dados relacionais e ferramentas de Business Intelligence. Participo ativamente de comunidades de tecnologia e hackathons, sempre buscando inovação e aprendizado contínuo. Meu objetivo é contribuir para projetos desafiadores, unindo criatividade, análise e código para gerar impacto positivo nos negócios.</p>
             </section>
             <section id="experiencia">
                 <h3>EXPERIÊNCIA DE TRABALHO</h3>
-                <p><strong>Desenhista Técnica</strong><br>Invento Geosoluções Ltda, Dezembro 2020 - Agosto 2023<br>Criação de projetos detalhados utilizando CAD e SIG usando scripts python e rotinas lisp. Colaboração com equipes multidisciplinares para desenvolvimento de soluções técnicas. Implementação de práticas de gerenciamento de tempo para garantir a entrega pontual dos projetos. Adesão a padrões de qualidade e normas técnicas para assegurar a excelência dos projetos..</p>
-                <p><strong>Técnico em Edificações</strong><br>Enpro Engenharia e Projetos Ltda, Maio 2009 - Maio 2014<br>Desenvolvimento de projetos arquitetônicos e estruturais.
-                Coordenação de trabalho em equipe para a realização de projetos de grande escala.
-                Utilização de técnicas de gerenciamento de tempo para a entrega eficaz de projetos.
-                Observância rigorosa dos padrões de qualidade e normas de construção.</p>
+                <p><strong>Desenhista Técnica</strong><br>Invento Geosoluções Ltda, Dezembro 2020 - Agosto 2023</p>
+                <ul>
+                    <li>Produção de desenhos técnicos e suporte em projetos de engenharia/topografia, garantindo precisão e qualidade nos entregáveis.</li>
+                    <li>Contribuição em projetos de geoprocessamento, aplicando scripts em Python para SIG e rotinas lisp para AutoCad.</li>
+                    <li>Soft skills: atenção aos detalhes, organização e capacidade de adaptação a diferentes demandas técnicas.</li>
+                </ul>
+                <p><strong>Técnico em Edificações</strong><br>Enpro Engenharia e Projetos Ltda, Maio 2009 - Maio 2014</p>
+                <ul>
+                    <li> Execução de projetos de infraestrutua e acompanhamento técnico em obras, assegurando conformidade com normas e prazos.</li>
+                    <li>Apoio em rotinas de integração entre equipes de campo e escritório.</li>
+                    <li>Soft skills: liderança de pequenos grupos, resolução de problemas em situações práticas e gestão de tempo.</li>
+                </ul>
             </section>
-            <section id="competencias">
-                <h3>COMPETÊNCIAS</h3>
-                <p>Python, Java, JavaScript, SQL, AWS, Azure, Copilot Studio, Fullstack Development, Node.js, BI, CAD, ArcGIS, SEO.</p>
+            <section id="certificacoes">
+                <h3>Certificações</h3>
+                <section id="certificacoes">
+   <table>
+    <thead>
+      <tr>
+        <th>Certificação</th>
+        <th>Competências adquiridas</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Certificação">Cloud Computing 101 - AWS</td>
+        <td data-label="Competências adquiridas">AWS Clould e Clould Foundations</td>
+        <td data-label="Link"><a href="https://www.credly.com/badges/3141e3ed-feca-46e4-bef4-344b12b98ba4/public_url">Credly</a></td>
+      </tr>
+      <tr>
+        <td data-label="Certificação">IBM — Python</td>
+        <td data-label="Competências adquiridas">Programação em Python, manipulação de dados, bibliotecas (Pandas, NumPy), automação</td>
+        <td data-label="Link"><a href="https://www.credly.com/badges/f8a44a0c-9927-4397-a898-b496cbec1399/public_url">Credly</a></td>
+      </tr>
+      <tr>
+        <td data-label="Certificação">IBM — Desenvolvimento Web</td>
+        <td data-label="Competências adquiridas">Fundamentos de HTML, CSS, JavaScript, boas práticas de desenvolvimento</td>
+        <td data-label="Link"><a href="https://www.credly.com/badges/4ee6cb85-c0e0-4c78-8e83-4d8d48182739/public_url">Credly</a></td>
+      </tr>
+      <tr>
+        <td data-label="Certificação">Google Data Analytics</td>
+        <td data-label="Competências adquiridas">Coleta e limpeza de dados, SQL, visualização com Tableau/Sheets, estatística aplicada</td>
+        <td data-label="Link"><a href="https://www.credly.com/badges/0496f805-cc0d-4d70-8574-23e035f0d839/public_url">Credly</a></td>
+      </tr>
+      <tr>
+        <td data-label="Certificação">Artificial Intelligence Fundamentals</td>
+        <td data-label="Competências adquiridas">Conceitos de IA, Machine Learning, ética em IA, aplicações práticas</td>
+        <td data-label="Link"><a href="https://www.credly.com/badges/577d982a-81d0-49c0-9df2-57ae505d38e9/public_url">Credly</a></td>
+      </tr>
+      <tr>
+        <td data-label="Certificação">Agile Explorer</td>
+        <td data-label="Competências adquiridas">Fundamentos de metodologias ágeis, Scrum, Kanban, colaboração em times</td>
+        <td data-label="Link"><a href="https://www.credly.com/badges/0496f805-cc0d-4d70-8574-23e035f0d839/public_url">Credly</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
             </section>
         </article>
         <aside>
             <section id="formacao">
                 <h3>FORMAÇÃO ACADÊMICA</h3>
-                <p><strong>Estácio</strong><br>Bacharelado, Ciência da Computação, 2021 - 2025</p>
+                <p><strong>Wyden</strong><br>Bacharelado, Engenharia de Software, 2025 - 2029</p>
+                <p><strong>Estácio</strong><br>Bacharelado, Ciência da Computação, 2022 - 2026</p>
                 <p><strong>CEFET/SE</strong><br>Curso Técnico, Técnico em Edificações, 1996 - 1999</p>
             </section>
-            <section id="chatbot-container">
-                <iframe src="https://copilotstudio.microsoft.com/environments/1784e43b-64de-e9d2-aad8-2b5ff3d4e6ec/bots/cr702_agenteEmBranco/webchat?__version__=2" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+            <section id="competencias">
+                <h3>COMPETÊNCIAS</h3>
+                <ul>
+                    <li>Python; Java; JavaScript; SQL</li>
+                    <li>React.js; Node.js; Copilot Studio; BI</li>
+                    <li>AWS; Azure; PostgreSQL</li>
+                    <li>ArcGIS; CAD; scripts Python para SIG</li>
+                    <li>SEO; Git; metodologias ágeis</li>
+                </ul>
             </section>
-
         </aside>
     </main>
+
+    <!-- Chat -->
+    <div id="chat-toggle">💬</div>
+    <div id="chatbox" class="fechado">
+      <div id="mensagens"></div>
+      <div id="entrada">
+        <input type="text" id="pergunta" placeholder="Pra começar digite: oi!..." />
+        <button id="btnEnviar">Enviar</button>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
     <footer>
         <section id="contato" class="text-center">
             <h3>CONTATO</h3>
@@ -69,9 +141,12 @@
             <a href="https://github.com/GicaNunes" target="_blank" class="btn btn-dark m-2"><i class="fab fa-github"></i> GitHub</a>
             <a href="mailto:nunesgiselle@bol.com.br" class="btn btn-primary m-2"><i class="fas fa-envelope"></i> Email</a>
             <a href="http://linkedin.com/in/giselle-santana5" target="_blank" class="btn btn-info m-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <p class="footer-highlight"> Muito Obrigada por visitar!</p>
+            <p class="footer-highlight">Muito Obrigada por visitar!</p>
         </section>
-        <p>&copy; 2025 Giselle Nunes Santana. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Giselle Nunes Santana. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,22 +1,32 @@
 # Meu Currículo Web
 
-Bem-vindo ao meu repositório GitHub! Aqui você encontrará o código-fonte do meu currículo web, uma plataforma onde apresento minhas habilidades, experiências e projetos. Este projeto foi desenvolvido para inspirar tanto iniciantes quanto veteranos a explorar e criar suas próprias versões de um currículo digital interativo.
+Bem-vindo ao meu repositório GitHub!  
+Este projeto apresenta meu currículo digital interativo, com um **chatbot estilo e-commerce** integrado, desenvolvido para mostrar minhas habilidades em **frontend, backend e automação**.
 
-## Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-Este projeto foi construído utilizando as seguintes stacks de tecnologia:
-
-- **HTML5**: A estrutura básica do conteúdo.
+- **HTML5**: Estrutura do conteúdo.
 - **CSS3**: Estilização e design responsivo.
-- **JavaScript**: Funcionalidades dinâmicas e interatividade.
+- **JavaScript (ES6+)**: Funcionalidades dinâmicas e interatividade.
 - **Bootstrap**: Framework para design responsivo e componentes reutilizáveis.
+- **n8n**: Automação backend para processar perguntas do chatbot.
+- **ngrok**: Exposição segura do servidor local para testes públicos.
+- **GitHub Pages**: Hospedagem gratuita e prática do currículo.
 
-## Objetivo do Projeto
+## 🎯 Objetivo do Projeto
 
-O objetivo deste projeto é não apenas apresentar meu currículo de uma forma inovadora, mas também fornecer um exemplo prático de como utilizar essas tecnologias para criar um site pessoal. 
-   
+O objetivo é apresentar meu currículo de forma inovadora e interativa, simulando uma entrevista com um chatbot.  
+Além disso, este projeto serve como exemplo prático de como integrar **frontend moderno** com **automação backend**.
 
-## Contribuições
-Incentivo todos os desenvolvedores - sejam iniciantes ou veteranos - a baixar o código, explorar e contribuir com melhorias. Sinta-se à vontade para criar pull requests com sugestões de aprimoramento ou novas funcionalidades.
+## 📂 Estrutura do Projeto
 
-Divirtam-se
+- `index.html` → Página principal do currículo.  
+- `style.css` → Estilos personalizados.  
+- `script.js` → Lógica do chatbot e integração com n8n.  
+- `README.md` → Documentação do projeto.  
+
+## 🛠️ Como Executar Localmente
+
+1. Clone o repositório:
+   -bash-
+   git clone https://github.com/GicaNunes/Curriculo_Web.git
